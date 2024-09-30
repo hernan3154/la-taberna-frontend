@@ -12,10 +12,10 @@ header.innerHTML = `
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="menu-platos.html">Platos</a></li>
                 <li><a href="bebidas-conalcohol.html">Bebidas con alcohol</a></li>
-                <li><a href="#">Bebidas sin alcohol</a></li>
-                <li><a href="#">Postres</a></li>
-                <li><a href="#">Quiénes Somos</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="bebidaSinAlcohol.html">Bebidas sin alcohol</a></li>
+                <li><a href="postres.html">Postres</a></li>
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
                 <li><a href="./carrito.html" id="cart"><img src="./img/shopping-cart.png" style="width: 30px; alt=""><span id="cuenta-carrito">0</span></a></li>
             </ul>
 
@@ -25,7 +25,7 @@ header.innerHTML = `
                     <div class="w3-button w3-padding-10 w3-right" onclick="w3_open()">☰</div>
                 </div>
             </div>
-`;
+            `;
 
 footer.innerHTML = `
 <ul class="items-footer">
