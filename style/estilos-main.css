@@ -1,0 +1,90 @@
+.main {
+    color: #4e2202;
+
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+}
+
+.main h1,
+h2,
+p {
+    font-size: medium;
+    display: flex;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.2rem;
+
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    
+    font-family: "Karma", sans-serif;
+    font-weight: 700;
+    margin: 10px 0;
+    
+    
+}
+
+/*style para la imagenes */
+#cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.centered-img {
+    width: 50vh;
+    height: 50vw;
+    border-radius: 50px;
+    margin: 10px;
+    object-fit: cover;/* Mantiene la relación de aspecto y recorta la imagen si es necesario */
+    transition: transform 0.3s, filter 0.3s;/* Transición suave para el efecto hover */
+}
+
+.centered-img:hover {
+    transform: scale(1.05);/* Aumenta el tamaño de la imagen */
+    filter: brightness(1.2);/* Aumenta el brillo de la imagen */
+    cursor: pointer;
+}
+
+
+/* style para los postres*/
+.postre,
+.comidas,
+.bebidas-sin-alcohol,
+.bebidas-con-alcohol{
+box-shadow: 5px 5px 0;      /* Sombra sin desenfoque */
+box-shadow: 5px 5px 2px;    /* Sombra con ligero desenfoque */
+box-shadow: 5px 5px 10px;   /* Sombra desenfocada */
+box-shadow: 5px 5px 10px;
+}
+/* style para los postres*/
+
+
+@media (min-width: 600px) {
+    .centered-img {
+        width: 50vh;
+        height: 20vw;
+    }
+
+    .main h1,
+    h2 {
+
+        font-size: 3.5vh;
+        display: flex;
+        font-weight: 700;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+}

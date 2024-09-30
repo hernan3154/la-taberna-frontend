@@ -1,0 +1,128 @@
+html,
+body{
+  padding: 0px;
+  border: 0px;
+  box-sizing: border-box;
+}
+/*stylosde la tarjeta*/
+.card {
+  --bs-card-spacer-y: 1rem;
+  --bs-card-spacer-x: 1rem;
+  --bs-card-title-spacer-y: 0.5rem;
+  --bs-card-title-color: #333; /* Color del título */
+  --bs-card-subtitle-color: #555; /* Color del subtítulo */
+  --bs-card-border-width: 1px; /* Ancho del borde */
+  --bs-card-border-color: rgba(0, 0, 0, 0.1); /* Color del borde */
+  --bs-card-border-radius: 0.5rem; /* Radio del borde */
+  --bs-card-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  --bs-card-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+  --bs-card-cap-padding-y: 0.5rem;
+  --bs-card-cap-padding-x: 1rem;
+  --bs-card-cap-bg: rgba(var(--bs-body-color-rgb), 0.03);
+  --bs-card-cap-color: #333; /* Color de la cabecera */
+  --bs-card-height: auto; /* Ajuste automático de la altura */
+  --bs-card-color: #333; /* Color del texto */
+  --bs-card-bg: #4caf50; /* Fondo de la tarjeta */
+  --bs-card-img-overlay-padding: 1rem;
+  --bs-card-group-margin: 0.75rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: var(--bs-card-height);
+  color: var(--bs-card-color);
+  word-wrap: break-word;
+  background-color: var(--bs-card-bg);
+  background-clip: border-box;
+  border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+  border-radius: var(--bs-card-border-radius);
+  box-shadow: var(--bs-card-box-shadow);
+}
+/*stylosde la tarjeta*/
+
+html, body {
+  font-family: Verdana, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/*estilos de los botones de la tarjeta*/
+.btn-primary {
+  --bs-btn-color: #D4AF37;
+  --bs-btn-bg: #00351d;
+  --bs-btn-border-color: #0dfd49;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #D4AF37;
+  --bs-btn-hover-border-color: #0dfd49;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #0a58ca;
+  --bs-btn-active-border-color: #0a53be;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, , 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #0d6efd;
+  --bs-btn-disabled-border-color: #047e37;
+}
+
+/*estilos de los botones de la tarjeta*/
+
+/* Productos home*/
+#productos-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+justify-content: center;
+padding: 2rem;}
+
+.tarjeta-producto{
+  background-color: var(--color-acento-claro);
+  text-align: center;
+  padding: 10px;
+  max-width: 400px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: 200ms;
+}
+
+.tarjeta-producto:hover{
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  translate: 0px -5px;
+}
+
+.tarjeta-producto img{
+  max-width:100%;
+  aspect-ratio: 1.5;
+
+}
+
+.precio{
+  font-weight: 600;
+}
+
+.tarjeta-producto button{
+  font-size: larger;
+  background-color: var(--color-acento);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: rgb(32, 125, 38);
+  border:unset;
+  cursor:pointer;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover;}
+
+    .card {
+      
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+      }
+      
+      .card:hover {
+        transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra */
+      }
+      
+      
+      

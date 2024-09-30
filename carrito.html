@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/style/estilos-navbar.css" />
+    <link rel="stylesheet" href="/style/style-footer.css" />
+    <link rel="stylesheet" href="/style/style-tarjetas.css" />
+    <link rel="stylesheet" href="/style/cart.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* Estilo general para el formulario */
+      #datos-cliente,
+      #resumen-compra {
+        margin-top: 30px; /* Espacio adicional para evitar que quede debajo del footer */
+        padding: 20px;
+        background-color: #f9f9f9; /* Fondo para resaltar el formulario */
+        border-radius: 10px;
+        max-width: 100%; /* Inicialmente ocupa el 100% de la pantalla */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un mejor efecto */
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      /* Estilos específicos para los inputs del formulario */
+      #form-datos-cliente .form-control {
+        padding: 10px;
+        font-size: 16px;
+      }
+
+      #form-datos-cliente .btn-success {
+        width: 100%;
+        padding: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 15px;
+      }
+
+      /* Asegurar que el contenido no se superponga con el footer */
+      footer {
+        margin-top: 50px;
+      }
+
+      /* Asegurar que el contenedor principal tenga espacio suficiente */
+      main {
+        min-height: 100vh;
+        padding-bottom: 50px; /* Espacio adicional para evitar el solapamiento */
+      }
+
+      /* Estilos para el resumen de la compra */
+      #resumen-compra {
+        margin-top: 30px;
+        padding: 20px;
+        background-color: #e9ecef;
+        border-radius: 10px;
+      }
+
+      #resumen-compra ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      #resumen-compra li {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      /* Consultas de medios (media queries) para pantallas más grandes */
+      @media (min-width: 576px) {
+        #datos-cliente,
+        #resumen-compra {
+          max-width: 540px; /* Limitar el ancho en pantallas pequeñas */
+        }
+      }
+
+      @media (min-width: 768px) {
+        #datos-cliente,
+        #resumen-compra {
+          max-width: 720px; /* Limitar el ancho en pantallas medianas */
+        }
+      }
+
+      @media (min-width: 992px) {
+        #datos-cliente,
+        #resumen-compra {
+          max-width: 960px; /* Limitar el ancho en pantallas más grandes */
+        }
+      }
+
+      @media (min-width: 1200px) {
+        #datos-cliente,
+        #resumen-compra {
+          max-width: 1140px; /* Limitar el ancho en pantallas extra grandes */
+        }
+      }
+
+      /* Mejorar el formulario en pantallas pequeñas */
+      @media (max-width: 576px) {
+        #form-datos-cliente .form-control {
+          font-size: 14px;
+          padding: 8px;
+        }
+
+        #form-datos-cliente .btn-success {
+          font-size: 16px;
+          padding: 8px;
+        }
+      }
+
+      /* Mejorar el resumen de compra en pantallas pequeñas */
+      @media (max-width: 576px) {
+        #resumen-compra li {
+          font-size: 14px;
+          margin-bottom: 8px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--navbar con javascript-->
+    <header class="navbar"></header>
+    <main>
+      <h1 id="carrito-vacio">
+        Ups! El carrito está vacío,
+        <a href="./index.html">elige algunos productos</a>
+      </h1>
+      <section id="cart-container"></section>
+      <section id="totales">
+        <h3 style="font-weight: 800">
+          Total unidades: <span id="cantidad">0</span>
+        </h3>
+        <h3 style="font-weight: 800">
+          Total precio: $<span id="precio">0</span>
+        </h3>
+        <button disabled class="restar btn btn-danger">Comprar</button>
+        <!--<button disabled btn btn->Comprar</button>-->
+        <!--<button id="reiniciar">Reiniciar</button>-->
+        <button id="reiniciar" class="restar btn btn-danger">Reiniciar</button>
+
+        <section id="datos-cliente" style="display: none">
+          <h2>Datos del Cliente</h2>
+          <form id="form-datos-cliente">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" required />
+            </div>
+            <div class="mb-3">
+              <label for="contacto" class="form-label"
+                >Contacto (Teléfono/Email)</label
+              >
+              <input type="text" class="form-control" id="contacto" required />
+            </div>
+            <button type="submit" class="btn btn-success">
+              Confirmar Compra
+            </button>
+          </form>
+        </section>
+        <section id="resumen-compra" style="display: none">
+          <h2>Resumen de la Compra</h2>
+          <ul id="lista-productos"></ul>
+          <p>
+            <strong>Nombre del Cliente:</strong>
+            <span id="cliente-nombre"></span>
+          </p>
+          <p>
+            <strong>Contacto del Cliente:</strong>
+            <span id="cliente-contacto"></span>
+          </p>
+          <p>
+            <strong>Total a Pagar:</strong> $<span id="total-compra"></span>
+          </p>
+        </section>
+      </section>
+    </main>
+
+    <!--Footer con javascript-->
+    <footer class="footer"></footer>
+
+    <script>
+      const comprarBtn = document.querySelector(".restar");
+      const datosClienteSection = document.getElementById("datos-cliente");
+      const resumenCompraSection = document.getElementById("resumen-compra");
+      const totalCompraElement = document.getElementById("total-compra");
+      const listaProductosElement = document.getElementById("lista-productos");
+      const nombreClienteElement = document.getElementById("cliente-nombre");
+      const contactoClienteElement =
+        document.getElementById("cliente-contacto");
+
+      // Mostrar el formulario para ingresar datos de contacto cuando el cliente haga clic en "Comprar"
+      comprarBtn.addEventListener("click", () => {
+        datosClienteSection.style.display = "block";
+      });
+
+      // Manejar la confirmación del formulario
+      document
+        .getElementById("form-datos-cliente")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          // Obtener los datos del cliente
+          const nombreCliente = document.getElementById("nombre").value;
+          const contactoCliente = document.getElementById("contacto").value;
+
+          // Obtener los productos del carrito
+          const productos = JSON.parse(localStorage.getItem("productos")) || [];
+
+          // Mostrar los productos comprados
+          listaProductosElement.innerHTML = ""; // Limpiar la lista de productos
+          let total = 0; // Inicializar el total a 0
+
+          // Recorrer los productos y calcular el total
+          productos.forEach((producto) => {
+            const item = document.createElement("li");
+            // Verifica que el producto tenga las propiedades necesarias
+            if (producto.cantidad && producto.nombre && producto.precio) {
+              const subtotal = productos.precio * productos.cantidad; // Calcular el subtotal
+              item.textContent = `${producto.cantidad}x ${
+                producto.nombre
+              } - $${subtotal.toFixed(2)}`; // Mostrar el subtotal
+              listaProductosElement.appendChild(item); // Agregar el item a la lista
+              total += subtotal; // Sumar al total
+            } else {
+              console.error(
+                "El producto no tiene la estructura adecuada:",
+                producto
+              );
+            }
+          });
+
+          // Mostrar los datos del cliente y el total de la compra
+          nombreClienteElement.textContent = nombreCliente;
+          contactoClienteElement.textContent = contactoCliente;
+          totalCompraElement.textContent = total.toFixed(2); // Mostrar el total con dos decimales
+          console.log(`Total a pagar: $${total.toFixed(2)}`); // Mostrar el total en la consola
+
+          // Ocultar formulario y mostrar resumen
+          datosClienteSection.style.display = "none";
+          resumenCompraSection.style.display = "block";
+        });
+    </script>
+  </body>
+
+  <script src="style/navbar-footer.js"></script>
+  <script src="style/datos-tarjetas.js"></script>
+  <script src="/style/carrito-tarjetas.js"></script>
+  <script src="/bicicletas/Carrito-de-compras/js/cart.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+</html>
