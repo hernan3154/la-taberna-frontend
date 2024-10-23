@@ -28,7 +28,7 @@
                     <option value="admin">Admin</option>
                 </select>
 
-                <button type="submit">Registrar</button>
+                <button type="submit" id="registerButton">Registrar</button>
 
                 <p>¿Ya tienes cuenta? <a href="#">Iniciar sesión</a></p>
                 <p><a href="index.html">Home</a></p>
@@ -45,6 +45,9 @@
         const password = document.getElementById('password').value; 
         const rol = document.getElementById('rol').value;
         const registerData = { nombre, email, contraseña: password, rol };
+        
+        const registerButton = document.getElementById('registerButton');
+        registerButton.disabled = true; // Deshabilitar el botón mientras se procesa la solicitud
 
         try {
             const response = await fetch('http://localhost:3000/auth/register', {
@@ -62,6 +65,9 @@
             }
         } catch (error) {
             console.error('Error:', error);
+            alert('Ocurrió un error al comunicarse con el servidor. Inténtalo de nuevo más tarde.');
+        } finally {
+            registerButton.disabled = false; // Habilitar el botón nuevamente
         }
     });
     </script>
