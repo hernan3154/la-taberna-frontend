@@ -1,174 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
-    <head>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/style/style.css">
-        <link rel="stylesheet" href="/style/estilos-navbar.css">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <title>La Taberna Artesanal </title>
-        <link rel="stylesheet" href="/style/estilos-main.css">
-        <link rel="stylesheet" href="/style/style-footer.css">
-    
-    </head>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/estilos-navbar.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>La Taberna Artesanal </title>
+    <link rel="stylesheet" href="/style/estilos-main.css">
+    <link rel="stylesheet" href="/style/style-footer.css">
+</head>
 
-    <body>
-        <!--navbar con javascript-->
-        <header class="navbar">
-        </header>
+<body>
+    <!--navbar con javascript-->
+    <header class="navbar"></header>
 
-        <!-- Sidebar (oculta por defecto) -->
-        <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-right"
-            style="display:none;z-index:2;width:40%;min-width:300px;background-color:#08977b;" id="mySidebar">
-            <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Cerrar</a>
-            <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
-            <a href="#platos" onclick="w3_close()" class="w3-bar-item w3-button">Platos</a>
-            <a href="#bebidas-con-alcohol" onclick="w3_close()" class="w3-bar-item w3-button">Bebidas con Alcohol</a>
-            <a href="#bebidas-sin-alcohol" onclick="w3_close()" class="w3-bar-item w3-button">Bebidas sin Alcohol</a>
-            <a href="#postres" onclick="w3_close()" class="w3-bar-item w3-button">Postres</a>
-            <a href="#quienes-somos" onclick="w3_close()" class="w3-bar-item w3-button">Quiénes Somos</a>
-            <a href="#contacto" onclick="w3_close()" class="w3-bar-item w3-button">Contacto</a>
-        </nav>
+    <!-- menu hamburguesa Sidebar (oculta por defecto) -->
+    <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-right"
+        style="display:none;z-index:2;width:40%;min-width:300px;background-color:#08977b;" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Cerrar</a>
+        <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+        <a href="#platos" onclick="w3_close()" class="w3-bar-item w3-button">Platos</a>
+        <a href="#bebidas-con-alcohol" onclick="w3_close()" class="w3-bar-item w3-button">Bebidas con Alcohol</a>
+        <a href="#bebidas-sin-alcohol" onclick="w3_close()" class="w3-bar-item w3-button">Bebidas sin Alcohol</a>
+        <a href="#postres" onclick="w3_close()" class="w3-bar-item w3-button">Postres</a>
+        <a href="#quienes-somos" onclick="w3_close()" class="w3-bar-item w3-button">Quiénes Somos</a>
+        <a href="#contacto" onclick="w3_close()" class="w3-bar-item w3-button">Contacto</a>
+    </nav>
 
-
-
-        <main class="main">
-            <section class="comidas">
-                <h1>La Taberna Artesanal </h1>
-                <h2>Descubre los platillos más emblemáticos que hacen de CHAMBUCHITO un destino culinario único.</h2>
-                <p>En La Taberna Artesanal, hemos seleccionado cuidadosamente los platos más representativos de nuestra
-                    cocina,
-                    aquellos que combinan tradición y creatividad en cada bocado. Desde cortes de carne jugosos y
-                    cocidos a
-                    la perfección hasta exquisitas combinaciones de ingredientes frescos, cada plato es una experiencia
-                    de
-                    sabor incomparable. Ven y deleita tu paladar con nuestras especialidades, que capturan la esencia de
-                    la
-                    gastronomía de la región y más allá. ¡Cada visita a CHAMBUCHITO es una celebración para los amantes
-                    de
-                    la buena comida!</p>
-                <div class="row row-cols-1 row-cols-md-4 g-2 justify-content-center" id="cards-container"
-                    style="text-align:center;">
-                   <img src="https://images.pexels.com/photos/1352274/pexels-photo-1352274.jpeg" alt=""
-                        class="centered-img">
-                   <img src="https://images.pexels.com/photos/24538682/pexels-photo-24538682/free-photo-of-cena-comida-queso-fotografia-de-comida.jpeg?auto=compress&cs=2048x2048&w=1"
-                        alt="" class="centered-img">
-                    <img src="https://media.istockphoto.com/id/594465522/es/foto/filetes-a-la-parrilla-a-la-parrilla-en-llamas-y-se-disparan-con-enfoque-selectivo.jpg?s=2048x2048&w=is&k=20&c=H5I6Fx2EwufxM7B92R9a2NirnkCfbcEYF-sC1MuPBwk="
-                        alt="" class="centered-img">
-                </div>
-            </section>
-            <br>
-            <br>
-            <br>
-
-            <section class="postre">
-                <h1>NUETROS POSTRES </h1>
-                <h2>Descubre los platillos más emblemáticos que hacen de CHAMBUCHITO un destino culinario único.</h2>
-                <p>Deléitate con los postres que conquistan los sentidos en CHAMBUCHITO
-                    Nuestros postres son una oda a la dulzura y al arte culinario. Cada uno de ellos ha sido creado para
-                    ofrecer un final perfecto a tu experiencia gastronómica en CHAMBUCHITO. Desde pasteles esponjosos
-                    hasta cremosos helados, nuestras creaciones están pensadas para satisfacer a los paladares más
-                    exigentes. ¡No te pierdas la oportunidad de probar estas delicias que te dejarán con ganas de más!
-                </p>
-                <div class="container-postres">
-
-                </div>
-                <div class="row row-cols-1 row-cols-md-4 g-2 justify-content-center" id="cards-container"
-                    style="text-align:center;">
-                    <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="" class="centered-img">
-                    <img src="https://images.pexels.com/photos/302468/pexels-photo-302468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="" class="centered-img">
-                    <img src="https://images.pexels.com/photos/7491913/pexels-photo-7491913.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
-                        alt=" class="centered-img">
-                </div>
-            </section>
-            <br>
-            <br>
-            <br>
-
-            <section class="bebidas-sin-alcohol">
-                <h1>Bebidas sin Alcohol </h1>
-                <h2>Para quienes prefieren opciones sin alcohol</h2>
-                <p>La Taberna Artesanal ofrece una variedad de bebidas refrescantes y llenas de sabor. Desde jugos
-                    naturales hasta limonadas y tés helados, cada bebida ha sido preparada con ingredientes frescos y de
-                    la mejor calidad. Perfectas para cualquier momento del día, nuestras bebidas sin alcohol son el
-                    acompañamiento ideal para una experiencia culinaria completa.
-                </p>
-                <div class="row row-cols-1 row-cols-md-4 g-2 justify-content-center" id="cards-container"
-                    style="text-align:center;">
-                    <img src="https://images.pexels.com/photos/13050983/pexels-photo-13050983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="" class="centered-img">
-                    <img src="https://images.pexels.com/photos/50593/coca-cola-cold-drink-soft-drink-coke-50593.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="" class="centered-img">
-                    <img src="https://images.pexels.com/photos/5837002/pexels-photo-5837002.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
-                        alt=" class="centered-img">
-                </div>
-            </section>
-
-            <br><br><br>
-
-            <section class="bebidas-con-alcohol">
-                <h1>Bebidas con Alcohol </h1>
-                <h2>Nuestra selección de bebidas con alcohol</h2>
-                <p>Desde elegantes vinos y cervezas artesanales hasta cócteles cuidadosamente elaborados, cada bebida ha
-                    sido elegida para armonizar con nuestros platos. Disfruta de sabores intensos y sorprendentes que
-                    elevarán cada bocado a nuevas alturas.
-                </p>
-                <div class="row row-cols-1 row-cols-md-4 g-2 justify-content-center" id="cards-container"
-                    style="text-align:center;">
-                    <img src="https://images.pexels.com/photos/9397571/pexels-photo-9397571.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="" class="centered-img">
-                    <img src="https://images.pexels.com/photos/1267684/pexels-photo-1267684.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="" class="centered-img">
-                    <img src="https://images.pexels.com/photos/7259083/pexels-photo-7259083.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
-                    alt=" class="centered-img">
-                </div>
-            </section>
-
-
-        </main>
-
-
-
-
-
-        <div class="section-con-alcohol">
-
-        </div>
+    <main class="main">
+        <section class="comidas">
+            <h1>La Taberna Artesanal</h1>
+            <h2>Descubre los platillos más emblemáticos que hacen de CHAMBUCHITO un destino culinario único.</h2>
+            <p>En La Taberna Artesanal, hemos seleccionado cuidadosamente los platos más representativos de nuestra cocina,
+                aquellos que combinan tradición y creatividad en cada bocado. Desde cortes de carne jugosos y cocidos a la
+                perfección hasta exquisitas combinaciones de ingredientes frescos, cada plato es una experiencia de sabor
+                incomparable. Ven y deleita tu paladar con nuestras especialidades, que capturan la esencia de la gastronomía
+                de la región y más allá. ¡Cada visita a CHAMBUCHITO es una celebración para los amantes de la buena comida!
+            </p>
+            <div class="row row-cols-1 row-cols-md-4 g-2 justify-content-center" id="comidas-cards-container"
+                style="text-align:center;">
+                <img src="https://images.pexels.com/photos/1352274/pexels-photo-1352274.jpeg" alt=""
+                    class="centered-img" />
+                <img src="https://images.pexels.com/photos/24538682/pexels-photo-24538682/free-photo-of-cena-comida-queso-fotografia-de-comida.jpeg?auto=compress&cs=2048x2048&w=1"
+                    alt="" class="centered-img" />
+                <img src="https://media.istockphoto.com/id/594465522/es/foto/filetes-a-la-parrilla-a-la-parrilla-en-llamas-y-se-disparan-con-enfoque-selectivo.jpg?s=2048x2048&w=is&k=20&c=H5I6Fx2EwufxM7B92R9a2NirnkCfbcEYF-sC1MuPBwk="
+                    alt="" class="centered-img" />
+            </div>
         </section>
 
-        <!--Footer con javascript-->
-        <footer class="footer">
-        </footer>
+        <br><br><br>
 
-
-
-        <!--<script>
-            // funcion para abrir y cerrar el menu  hamburguesa
-            function w3_open() {
-                document.getElementById("mySidebar").style.display = "block";
-            }
-
-            function w3_close() {
-                document.getElementById("mySidebar").style.display = "none";
-            }
-        </script>-->
+        <section class="postre">
+            <h1>NUESTROS POSTRES</h1>
+            <h2>Descubre los platillos más emblemáticos que hacen de CHAMBUCHITO un destino culinario único.</h2>
+            <p>Deléitate con los postres que conquistan los sentidos en CHAMBUCHITO. Nuestros postres son una oda a la dulzura
+                y al arte culinario. Desde pasteles esponjosos hasta cremosos helados, nuestras creaciones están pensadas para
+                satisfacer a los paladares más exigentes. ¡No te pierdas la oportunidad de probar estas delicias que te
+                dejarán con ganas de más!</p>
+            <div class="row row-cols-1 row-cols-md-4 g-2 justify-content-center" id="postres-cards-container"
+                style="text-align:center;">
+                <a href="https://www.ejemplo.com/postre1" target="_blank" class="postre-link">
+                    <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Postre 1" class="centered-img" />
+                </a>
+                <a href="https://www.ejemplo.com/postre2" target="_blank" class="postre-link">
+                    <img src="https://images.pexels.com/photos/302468/pexels-photo-302468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Postre 2" class="centered-img" />
+                </a>
+                <a href="https://www.ejemplo.com/postre3" target="_blank" class="postre-link">
+                    <img src="https://images.pexels.com/photos/7491913/pexels-photo-7491913.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Postre 3" class="centered-img" />
+                </a>
+            </div>
+        </section>
         
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
-        <!--<script src="style/datos-tarjetas.js"></script>-->
-        <script src="style/js/navbar-footer.js"></script>
-        <script src="/style/js/cartService.js"></script>
-        <script src="/style/js/menuhambuerguesa.js"></script>
+        
 
-    </body>
+        <br><br><br>
+
+        <section class="bebidas-sin-alcohol">
+            <h1>Bebidas sin Alcohol</h1>
+            <h2>Para quienes prefieren opciones sin alcohol</h2>
+            <p>La Taberna Artesanal ofrece una variedad de bebidas refrescantes y llenas de sabor. Desde jugos naturales
+                hasta limonadas y tés helados, cada bebida ha sido preparada con ingredientes frescos y de la mejor
+                calidad. Perfectas para cualquier momento del día, nuestras bebidas sin alcohol son el acompañamiento
+                ideal para una experiencia culinaria completa.</p>
+            <div class="row row-cols-1 row-cols-md-4 g-2 justify-content-center" id="sin-alcohol-cards-container"
+                style="text-align:center;"></a>
+                <a href="https://www.ejemplo.com/postre1" target="_blank" class="postre-link">
+                <img src="https://images.pexels.com/photos/13050983/pexels-photo-13050983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="" class="centered-img" /></a>
+                    <a href="https://www.ejemplo.com/postre1" target="_blank" class="postre-link">
+                <img src="https://images.pexels.com/photos/50593/coca-cola-cold-drink-soft-drink-coke-50593.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="" class="centered-img" /></a>
+                    <a href="https://www.ejemplo.com/postre1" target="_blank" class="postre-link">
+                <img src="https://images.pexels.com/photos/5837002/pexels-photo-5837002.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="" class="centered-img" /></a>
+            </div>
+        </section>
+
+        <br><br><br>
+
+        <section class="bebidas-con-alcohol">
+            <h1>Bebidas con Alcohol</h1>
+            <h2>Para los paladares más exigentes</h2>
+            <p>En CHAMBUCHITO, te ofrecemos una selección de bebidas alcohólicas que harán las delicias de los amantes de
+                los cócteles y bebidas clásicas. Desde cervezas artesanales hasta cócteles exclusivos preparados por nuestros
+                expertos bartenders, cada trago es una experiencia que combina tradición e innovación en un solo sorbo.
+                ¡Ven y disfruta de un momento inolvidable en La Taberna Artesanal!</p>
+            <div class="row row-cols-1 row-cols-md-4 g-2 justify-content-center" id="alcohol-cards-container"
+                style="text-align:center;">
+                <img src="https://images.pexels.com/photos/1252815/pexels-photo-1252815.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="" class="centered-img" />
+                <img src="https://images.pexels.com/photos/3151769/pexels-photo-3151769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="" class="centered-img" />
+                <img src="https://images.pexels.com/photos/736914/pexels-photo-736914.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="" class="centered-img" />
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!--Footer code-->
+    </footer>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/style/js/menuhambuerguesa.js"></script>
+<script src="/style/js/navbar-footer.js"></script>
 
 </html>

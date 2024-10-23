@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style-login.css">
+    <title>Login Admin</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <form action="" class="inicio" id="loginForm">
+            <h1>Inicio Admin</h1>
+            <div class="info">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" placeholder="Ingresa tu usuario" required>
+
+                <label for="contraseña">Contraseña</label>
+                <input type="password" id="contraseña" placeholder="Ingresa tu contraseña" required>
+
+                <button type="submit">Iniciar sesión</button>
+
+                <p>¿No tienes cuenta? <a href="registro.html">Regístrate</a></p>
+                <p><a href="index.html">Home</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', async function (event) {
+            event.preventDefault();
+
+            const email = document.getElementById('usuario').value;
+            const password = document.getElementById('contraseña').value;
+
+            const loginData = { email, contraseña: password };
+
+            try {
+                const response = await fetch('http://localhost:3000/auth/login', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(loginData)
+                });
+                const result = await response.json();
+
+                console.log(result); // Para verificar la respuesta
+
+                if (response.ok) {
+                    alert('Inicio de sesión exitoso');
+                    console.log('Rol del usuario:', result.rol); // Verifica si el rol es correcto
+                    // Redirige a la página de agregar productos si el rol es admin
+                    if (result.rol === 'admin') {
+                        window.location.href = '/admin.html'; // Asegúrate de que esta ruta sea correcta
+                    } else {
+                        window.location.href = '/user'; // Ruta para otros roles si corresponde
+                    }
+                } else {
+                    alert(result.message || 'Error al iniciar sesión');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        });
+    </script>
+</body>
+</html>

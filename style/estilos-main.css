@@ -33,6 +33,15 @@ h6 {
     
     
 }
+.postre-link {
+    margin: 0 15px; /* Espacio horizontal entre las imágenes */
+}
+
+.centered-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
 /*style para la imagenes */
 #cards-container {
