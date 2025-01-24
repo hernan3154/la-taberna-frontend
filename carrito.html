@@ -15,124 +15,48 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="/style/estilos-navbar.css" />
-    <link rel="stylesheet" href="/style/style-footer.css" />
-    <link rel="stylesheet" href="/style/style-tarjetas.css" />
-    <link rel="stylesheet" href="/style/cart.css" />
+    
+      <link rel="stylesheet" href="/style/css/style-tarjetas.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="/style/css/cart.css">
+      <link rel="stylesheet" href="/style/css/funcion-carrito.js">
+      <link rel="stylesheet" href="/style/css/style.css">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-      /* Estilo general para el formulario */
-      #datos-cliente,
-      #resumen-compra {
-        margin-top: 30px; /* Espacio adicional para evitar que quede debajo del footer */
-        padding: 20px;
-        background-color: #f9f9f9; /* Fondo para resaltar el formulario */
-        border-radius: 10px;
-        max-width: 100%; /* Inicialmente ocupa el 100% de la pantalla */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un mejor efecto */
-        margin-left: auto;
-        margin-right: auto;
-      }
 
-      /* Estilos específicos para los inputs del formulario */
-      #form-datos-cliente .form-control {
-        padding: 10px;
-        font-size: 16px;
-      }
-
-      #form-datos-cliente .btn-success {
-        width: 100%;
-        padding: 10px;
-        font-size: 18px;
-        font-weight: bold;
-        margin-top: 15px;
-      }
-
-      /* Asegurar que el contenido no se superponga con el footer */
-      footer {
-        margin-top: 50px;
-      }
-
-      /* Asegurar que el contenedor principal tenga espacio suficiente */
-      main {
-        min-height: 100vh;
-        padding-bottom: 50px; /* Espacio adicional para evitar el solapamiento */
-      }
-
-      /* Estilos para el resumen de la compra */
-      #resumen-compra {
-        margin-top: 30px;
-        padding: 20px;
-        background-color: #e9ecef;
-        border-radius: 10px;
-      }
-
-      #resumen-compra ul {
-        list-style-type: none;
-        padding: 0;
-      }
-
-      #resumen-compra li {
-        font-size: 16px;
-        margin-bottom: 10px;
-      }
-
-      /* Consultas de medios (media queries) para pantallas más grandes */
-      @media (min-width: 576px) {
-        #datos-cliente,
-        #resumen-compra {
-          max-width: 540px; /* Limitar el ancho en pantallas pequeñas */
-        }
-      }
-
-      @media (min-width: 768px) {
-        #datos-cliente,
-        #resumen-compra {
-          max-width: 720px; /* Limitar el ancho en pantallas medianas */
-        }
-      }
-
-      @media (min-width: 992px) {
-        #datos-cliente,
-        #resumen-compra {
-          max-width: 960px; /* Limitar el ancho en pantallas más grandes */
-        }
-      }
-
-      @media (min-width: 1200px) {
-        #datos-cliente,
-        #resumen-compra {
-          max-width: 1140px; /* Limitar el ancho en pantallas extra grandes */
-        }
-      }
-
-      /* Mejorar el formulario en pantallas pequeñas */
-      @media (max-width: 576px) {
-        #form-datos-cliente .form-control {
-          font-size: 14px;
-          padding: 8px;
-        }
-
-        #form-datos-cliente .btn-success {
-          font-size: 16px;
-          padding: 8px;
-        }
-      }
-
-      /* Mejorar el resumen de compra en pantallas pequeñas */
-      @media (max-width: 576px) {
-        #resumen-compra li {
-          font-size: 14px;
-          margin-bottom: 8px;
-        }
-      }
     </style>
   </head>
 
   <body>
-    <!--navbar con javascript-->
-    <header class="navbar"></header>
+    <header class="header">
+      <div class="logo-container">
+          <img src="/img/preview.png" alt="Logo restaurante" class="logo">
+      </div>
+      
+      <button class="abrir-menu" id="abrir"><i class="fa-solid fa-bars"></i></button>
+
+      <nav class="navbar " id="navbar">
+          
+          <ul class="menu" id="menu">
+              <button class="cerrar-menu" id="cerrar"><i class="fa-solid fa-x"></i></button>
+              <li><a href="index.html">Inicio</a></li>
+              <div class="dropdown">
+                  <li><a href="#" class="dropdown-btn">Menú</a></li>
+                  <div class="dropdown-content">
+                      <a href="menu-platos.html">Hacer Pedido</a>
+                      <a href="bebidas-conalcohol.html">Bebidas Con Alcohol</a>
+                      <a href="bebidaSinAlcohol.html">Bebida Sin Alcohol</a>
+                      <a href="postres.html">Postres</a>
+                  </div>
+              </div>
+              <li><a href="#">Quiénes Somos</a></li>
+              <li><a href="#">Contacto</a></li>
+              <li><a href="./carrito.html" id="cart"><img src="./img/shopping-cart.png" style="width: 30px" alt=""><span id="cuenta-carrito">0</span></a></li>
+          </ul>
+          
+      </nav>
+  </header>
     <main>
       <h1 id="carrito-vacio">
         Ups! El carrito está vacío,
@@ -254,10 +178,11 @@
     </script>
   </body>
 
-  <script src="style/navbar-footer.js"></script>
-  <script src="style/datos-tarjetas.js"></script>
-  <script src="/style/carrito-tarjetas.js"></script>
-  <script src="/bicicletas/Carrito-de-compras/js/cart.js"></script>
+  
+  <script src="style/js/datos-tarjetas.js"></script>
+  <script src="/style/js/carrito-tarjetas.js"></script>
+  <script src="/style/js/menuhambuerguesa.js"></script>
+  
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

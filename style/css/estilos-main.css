@@ -40,6 +40,7 @@ h6 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 5rem;
 }
 
 .centered-img {
@@ -86,5 +87,11 @@ box-shadow: 5px 5px 10px;
         justify-content: center;
         align-items: center;
         padding: 10px;
+    }
+}
+@media (min-width: 768px) {
+    .row-cols-md-4>* {
+        flex: 0 0 auto;
+        
     }
 }

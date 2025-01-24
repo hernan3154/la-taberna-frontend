@@ -24,11 +24,11 @@ function crearTarjetasProductosInicio(productos) {
     nuevaTarjeta.innerHTML = `
       <img src="${producto.imagen_url}" class="card-img-top espacio-imagen" alt="${producto.nombre}">
       <div class="card-body">
-        <h5 class="card-title">${producto.nombre}</h5>
+        <h5 class="card-title", style="display: flex; justify-content: center; align-items: center;">${producto.nombre}</h5>
         <p class="card-text">$${producto.precio}</p>
         <p class="card-text">Categoria: ${producto.categoria}</p>
         <p>Disponible: ${producto.disponible > 0 ? 'Sí' : 'No'}</p>
-        <button class="btn btn-primary" data-id="${producto.id}">Agregar al carrito</button>
+        <button class="btn btn-primary" data-id="${producto.id}" style="display: flex; justify-content: center; align-items: center;"git  >Agregar al carrito</button>
       </div>
     `;
     contenedorTarjetas.appendChild(nuevaTarjeta);

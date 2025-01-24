@@ -1,174 +1,235 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
-    <head>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/style/style.css">
-        <link rel="stylesheet" href="/style/estilos-navbar.css">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <title>La Taberna Artesanal </title>
-        <link rel="stylesheet" href="/style/estilos-main.css">
-        <link rel="stylesheet" href="/style/style-footer.css">
-    
-    </head>
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>La Taberna </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/css/style.css">
+    <link rel="stylesheet" href="/style/css/style-carrousel.css">
 
-    <body>
-        <!--navbar con javascript-->
-        <header class="navbar">
-        </header>
+</head>
 
-        <!-- Sidebar (oculta por defecto) -->
-        <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-right"
-            style="display:none;z-index:2;width:40%;min-width:300px;background-color:#08977b;" id="mySidebar">
-            <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Cerrar</a>
-            <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
-            <a href="#platos" onclick="w3_close()" class="w3-bar-item w3-button">Platos</a>
-            <a href="#bebidas-con-alcohol" onclick="w3_close()" class="w3-bar-item w3-button">Bebidas con Alcohol</a>
-            <a href="#bebidas-sin-alcohol" onclick="w3_close()" class="w3-bar-item w3-button">Bebidas sin Alcohol</a>
-            <a href="#postres" onclick="w3_close()" class="w3-bar-item w3-button">Postres</a>
-            <a href="#quienes-somos" onclick="w3_close()" class="w3-bar-item w3-button">Quiénes Somos</a>
-            <a href="#contacto" onclick="w3_close()" class="w3-bar-item w3-button">Contacto</a>
-        </nav>
+<body class="grid-container">
 
 
-
-        <main class="main">
-            <section class="comidas">
-                <h1>La Taberna Artesanal </h1>
-                <h2>Descubre los platillos más emblemáticos que hacen de CHAMBUCHITO un destino culinario único.</h2>
-                <p>En La Taberna Artesanal, hemos seleccionado cuidadosamente los platos más representativos de nuestra
-                    cocina,
-                    aquellos que combinan tradición y creatividad en cada bocado. Desde cortes de carne jugosos y
-                    cocidos a
-                    la perfección hasta exquisitas combinaciones de ingredientes frescos, cada plato es una experiencia
-                    de
-                    sabor incomparable. Ven y deleita tu paladar con nuestras especialidades, que capturan la esencia de
-                    la
-                    gastronomía de la región y más allá. ¡Cada visita a CHAMBUCHITO es una celebración para los amantes
-                    de
-                    la buena comida!</p>
-                <div class="row row-cols-1 row-cols-md-4 g-2 justify-content-center" id="cards-container"
-                    style="text-align:center;">
-                   <img src="https://images.pexels.com/photos/1352274/pexels-photo-1352274.jpeg" alt=""
-                        class="centered-img">
-                   <img src="https://images.pexels.com/photos/24538682/pexels-photo-24538682/free-photo-of-cena-comida-queso-fotografia-de-comida.jpeg?auto=compress&cs=2048x2048&w=1"
-                        alt="" class="centered-img">
-                    <img src="https://media.istockphoto.com/id/594465522/es/foto/filetes-a-la-parrilla-a-la-parrilla-en-llamas-y-se-disparan-con-enfoque-selectivo.jpg?s=2048x2048&w=is&k=20&c=H5I6Fx2EwufxM7B92R9a2NirnkCfbcEYF-sC1MuPBwk="
-                        alt="" class="centered-img">
-                </div>
-            </section>
-            <br>
-            <br>
-            <br>
-
-            <section class="postre">
-                <h1>NUETROS POSTRES </h1>
-                <h2>Descubre los platillos más emblemáticos que hacen de CHAMBUCHITO un destino culinario único.</h2>
-                <p>Deléitate con los postres que conquistan los sentidos en CHAMBUCHITO
-                    Nuestros postres son una oda a la dulzura y al arte culinario. Cada uno de ellos ha sido creado para
-                    ofrecer un final perfecto a tu experiencia gastronómica en CHAMBUCHITO. Desde pasteles esponjosos
-                    hasta cremosos helados, nuestras creaciones están pensadas para satisfacer a los paladares más
-                    exigentes. ¡No te pierdas la oportunidad de probar estas delicias que te dejarán con ganas de más!
-                </p>
-                <div class="container-postres">
-
-                </div>
-                <div class="row row-cols-1 row-cols-md-4 g-2 justify-content-center" id="cards-container"
-                    style="text-align:center;">
-                    <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="" class="centered-img">
-                    <img src="https://images.pexels.com/photos/302468/pexels-photo-302468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="" class="centered-img">
-                    <img src="https://images.pexels.com/photos/7491913/pexels-photo-7491913.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
-                        alt=" class="centered-img">
-                </div>
-            </section>
-            <br>
-            <br>
-            <br>
-
-            <section class="bebidas-sin-alcohol">
-                <h1>Bebidas sin Alcohol </h1>
-                <h2>Para quienes prefieren opciones sin alcohol</h2>
-                <p>La Taberna Artesanal ofrece una variedad de bebidas refrescantes y llenas de sabor. Desde jugos
-                    naturales hasta limonadas y tés helados, cada bebida ha sido preparada con ingredientes frescos y de
-                    la mejor calidad. Perfectas para cualquier momento del día, nuestras bebidas sin alcohol son el
-                    acompañamiento ideal para una experiencia culinaria completa.
-                </p>
-                <div class="row row-cols-1 row-cols-md-4 g-2 justify-content-center" id="cards-container"
-                    style="text-align:center;">
-                    <img src="https://images.pexels.com/photos/13050983/pexels-photo-13050983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="" class="centered-img">
-                    <img src="https://images.pexels.com/photos/50593/coca-cola-cold-drink-soft-drink-coke-50593.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="" class="centered-img">
-                    <img src="https://images.pexels.com/photos/5837002/pexels-photo-5837002.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
-                        alt=" class="centered-img">
-                </div>
-            </section>
-
-            <br><br><br>
-
-            <section class="bebidas-con-alcohol">
-                <h1>Bebidas con Alcohol </h1>
-                <h2>Nuestra selección de bebidas con alcohol</h2>
-                <p>Desde elegantes vinos y cervezas artesanales hasta cócteles cuidadosamente elaborados, cada bebida ha
-                    sido elegida para armonizar con nuestros platos. Disfruta de sabores intensos y sorprendentes que
-                    elevarán cada bocado a nuevas alturas.
-                </p>
-                <div class="row row-cols-1 row-cols-md-4 g-2 justify-content-center" id="cards-container"
-                    style="text-align:center;">
-                    <img src="https://images.pexels.com/photos/9397571/pexels-photo-9397571.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="" class="centered-img">
-                    <img src="https://images.pexels.com/photos/1267684/pexels-photo-1267684.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="" class="centered-img">
-                    <img src="https://images.pexels.com/photos/7259083/pexels-photo-7259083.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
-                    alt=" class="centered-img">
-                </div>
-            </section>
-
-
-        </main>
-
-
-
-
-
-        <div class="section-con-alcohol">
-
+    <header class="header">
+        <div class="logo-container">
+            <img src="/img/preview.png" alt="Logo restaurante" class="logo">
         </div>
+        
+        <button class="abrir-menu" id="abrir"><i class="fa-solid fa-bars"></i></button>
+
+        <nav class="navbar " id="navbar">
+            
+            <ul class="menu" id="menu">
+                <button class="cerrar-menu" id="cerrar"><i class="fa-solid fa-x"></i></button>
+                <li><a href="index.html">Inicio</a></li>
+                <div class="dropdown">
+                    <li><a href="#" class="dropdown-btn">Menú</a></li>
+                    <div class="dropdown-content">
+                        <a href="menu-platos.html">Hacer Pedido</a>
+                        <a href="bebidas-conalcohol.html">Bebidas Con Alcohol</a>
+                        <a href="bebidaSinAlcohol.html">Bebida Sin Alcohol</a>
+                        <a href="postres.html">Postres</a>
+                    </div>
+                </div>
+                <li><a href="#">Quiénes Somos</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="./carrito.html" id="cart"><img src="./img/shopping-cart.png" style="width: 30px" alt=""><span id="cuenta-carrito">0</span></a></li>
+            </ul>
+            
+        </nav>
+    </header>
+    
+
+    <aside class="sidebar">
+        <div class="text-content">
+            <h1>Nosotros</h1>
+            <p> Ofrecemos una experiencia gastronómica que destaca por su comida abundante y de alta
+                calidad, acompañada de una cuidada selección de los mejores vinos. Además, nuestros postres han sido
+                elegidos meticulosamente para enriquecer su experiencia culinaria.</p>
+            <p>La Taberna es un restaurante de comida tradicional, con un toque moderno y creativo. Nuestro objetivo es
+                ofrecer a nuestros clientes una experiencia culinaria única, que combine la calidad de los ingredientes
+                con la pasión por la gastronomía. Ven a disfrutar de nuestros platos y descubre por qué somos el destino
+                favorito de los amantes de la buena comida.</p>
+           
+        </div>
+    </aside>
+
+
+
+
+    <article class="main">
+        <section class="comidas">
+            <h1> <a href="menu-platos.html"> NUESTRO MENU </a> </h1>
+            <h2>Descubre los platillos más emblemáticos que hacen de LA TABERNA un destino culinario único.</h2>
+            <p>En La Taberna Artesanal, hemos seleccionado cuidadosamente los platos más representativos de nuestra
+                cocina,
+                aquellos que combinan tradición y creatividad en cada bocado. Desde cortes de carne jugosos y
+                cocidos a
+                la perfección hasta exquisitas combinaciones de ingredientes frescos, cada plato es una experiencia
+                de
+                sabor incomparable. Ven y deleita tu paladar con nuestras especialidades, que capturan la esencia de
+                la
+                gastronomía de la región y más allá. ¡Cada visita a CHAMBUCHITO es una celebración para los amantes
+                de
+                la buena comida!</p>
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <div class="carousel">
+                  
+                        <img src="https://media.istockphoto.com/id/594465522/es/foto/filetes-a-la-parrilla-a-la-parrilla-en-llamas-y-se-disparan-con-enfoque-selectivo.jpg?s=2048x2048&w=is&k=20&c=H5I6Fx2EwufxM7B92R9a2NirnkCfbcEYF-sC1MuPBwk="
+                            alt="img" draggable="false" />
+                   
+                        <img src="https://images.pexels.com/photos/24538682/pexels-photo-24538682/free-photo-of-cena-comida-queso-fotografia-de-comida.jpeg?auto=compress&cs=2048x2048&w=1"
+                            alt="img" draggable="false" />
+                  
+                        <img src="https://media.istockphoto.com/id/465069300/photo/meat-with-sauce-and-vegetables.jpg?s=1024x1024&w=is&k=20&c=ihaq01--MgfR4nxtGgG1ia4iduTAwSlJf0rHqSsUt9Q="
+                            alt="img" draggable="false" />
+                   
+                        <img src="https://media.istockphoto.com/id/1284598634/photo/milanesa-a-la-napolitana-argentina-breaded-beef-cutlet.jpg?s=1024x1024&w=is&k=20&c=a-qGQBar5sTINM9wEXrhCmc9976l_qMWR8zzn9yeuLI="
+                            alt="img" draggable="false" />
+                    
+                
+                        <img src="https://media.istockphoto.com/id/1395741694/photo/delicious-fried-breaded-cutlets-with-garnish-served-on-white-marble-table-closeup.jpg?s=1024x1024&w=is&k=20&c=qwqTPnaZauuwJ0ZwS-9FasJWujTUbGxIXoCKHzfotp0="
+                            alt="img" draggable="false" />
+                   
+                        <img src="https://media.istockphoto.com/id/1439776229/photo/homemade-spinach-and-ricotta-ravioli-with-tomato-sauce-and-parmesan-close-up.jpg?s=1024x1024&w=is&k=20&c=bcjdlEzpdoj9Y_x_Hw10LziCFiVKUMaadSiErOCH4OM="
+                            alt="img" draggable="false" />
+                 
+                        <img src="https://media.istockphoto.com/id/1066643992/photo/italian-pasta.jpg?s=1024x1024&w=is&k=20&c=5VgFMzTBCXwCK9TNFkTXxZOq2vqXuDaUOPzd5kBM5EI="
+                            alt="img" draggable="false" />
+                
+                        <img src="https://media.istockphoto.com/id/1230001174/photo/fried-cod-fillet-with-fresh-vegetables.jpg?s=1024x1024&w=is&k=20&c=7dTkiHAtldWM3_yrV__hq62zx-O-ZYUIFFPae91H8Jo="
+                            alt="img" draggable="false" />
+                    
+                        <img src="https://media.istockphoto.com/id/2188474401/photo/juicy-and-delicious-hamburger.jpg?s=1024x1024&w=is&k=20&c=BAFk38wttCDrbkLJ6fhU8wY6RhqXNgxOJmgJVohqN8o="
+                            alt="img" draggable="false" />
+                   
+                </div>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+                
+            </div>
+            <button type="button" class="btn btn-outline-primary">Relizar Pedido</button>
         </section>
 
-        <!--Footer con javascript-->
-        <footer class="footer">
-        </footer>
+        <section class="comidas">
+            <h1> <a href="">NUETROS POSTRES</a> </h1>
+            <h2>Descubre los platillos más emblemáticos que hacen de CHAMBUCHITO un destino culinario único.</h2>
+            <p>Deléitate con los postres que conquistan los sentidos en CHAMBUCHITO
+                Nuestros postres son una oda a la dulzura y al arte culinario. Cada uno de ellos ha sido creado para
+                ofrecer un final perfecto a tu experiencia gastronómica en CHAMBUCHITO. Desde pasteles esponjosos
+                hasta cremosos helados, nuestras creaciones están pensadas para satisfacer a los paladares más
+                exigentes. ¡No te pierdas la oportunidad de probar estas delicias que te dejarán con ganas de más!
+            </p>
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <div class="carousel">
+                    <img src="https://media.istockphoto.com/id/594465522/es/foto/filetes-a-la-parrilla-a-la-parrilla-en-llamas-y-se-disparan-con-enfoque-selectivo.jpg?s=2048x2048&w=is&k=20&c=H5I6Fx2EwufxM7B92R9a2NirnkCfbcEYF-sC1MuPBwk="
+                        alt="img" draggable="false" />
+                    <img src="https://images.pexels.com/photos/24538682/pexels-photo-24538682/free-photo-of-cena-comida-queso-fotografia-de-comida.jpeg?auto=compress&cs=2048x2048&w=1"
+                        alt="img" draggable="false" />
+                    <img src="https://media.istockphoto.com/id/465069300/photo/meat-with-sauce-and-vegetables.jpg?s=1024x1024&w=is&k=20&c=ihaq01--MgfR4nxtGgG1ia4iduTAwSlJf0rHqSsUt9Q="
+                        alt="img" draggable="false" />
+                    <img src="https://media.istockphoto.com/id/1284598634/photo/milanesa-a-la-napolitana-argentina-breaded-beef-cutlet.jpg?s=1024x1024&w=is&k=20&c=a-qGQBar5sTINM9wEXrhCmc9976l_qMWR8zzn9yeuLI="
+                        alt="img" draggable="false" />
+                    <img src="https://media.istockphoto.com/id/1395741694/photo/delicious-fried-breaded-cutlets-with-garnish-served-on-white-marble-table-closeup.jpg?s=1024x1024&w=is&k=20&c=qwqTPnaZauuwJ0ZwS-9FasJWujTUbGxIXoCKHzfotp0="
+                        alt="img" draggable="false" />
+                    <img src="https://media.istockphoto.com/id/1439776229/photo/homemade-spinach-and-ricotta-ravioli-with-tomato-sauce-and-parmesan-close-up.jpg?s=1024x1024&w=is&k=20&c=bcjdlEzpdoj9Y_x_Hw10LziCFiVKUMaadSiErOCH4OM="
+                        alt="img" draggable="false" />
+                    <img src="https://media.istockphoto.com/id/1066643992/photo/italian-pasta.jpg?s=1024x1024&w=is&k=20&c=5VgFMzTBCXwCK9TNFkTXxZOq2vqXuDaUOPzd5kBM5EI="
+                        alt="img" draggable="false" />
+                    <img src="https://media.istockphoto.com/id/1230001174/photo/fried-cod-fillet-with-fresh-vegetables.jpg?s=1024x1024&w=is&k=20&c=7dTkiHAtldWM3_yrV__hq62zx-O-ZYUIFFPae91H8Jo="
+                        alt="img" draggable="false" />
+                    <img src="https://media.istockphoto.com/id/2188474401/photo/juicy-and-delicious-hamburger.jpg?s=1024x1024&w=is&k=20&c=BAFk38wttCDrbkLJ6fhU8wY6RhqXNgxOJmgJVohqN8o="
+                        alt="img" draggable="false" />
+                </div>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+            <button type="button" class="btn btn-outline-primary">Relizar Pedido</button>
+        </section>
+        <section class="comidas">
+            <h1><a href="">BEBIDAS CON ALCOHOL </a> </h1>
+            <h2>Nuestra selección de bebidas con alcohol</h2>
+            <p>Desde elegantes vinos y cervezas artesanales hasta cócteles cuidadosamente elaborados, cada bebida ha
+                sido elegida para armonizar con nuestros platos. Disfruta de sabores intensos y sorprendentes que
+                elevarán cada bocado a nuevas alturas.
+            </p>
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <div class="carousel">
+                    <img src="https://media.istockphoto.com/id/594465522/es/foto/filetes-a-la-parrilla-a-la-parrilla-en-llamas-y-se-disparan-con-enfoque-selectivo.jpg?s=2048x2048&w=is&k=20&c=H5I6Fx2EwufxM7B92R9a2NirnkCfbcEYF-sC1MuPBwk="
+                        alt="img" draggable="false" />
+                    <img src="https://images.pexels.com/photos/24538682/pexels-photo-24538682/free-photo-of-cena-comida-queso-fotografia-de-comida.jpeg?auto=compress&cs=2048x2048&w=1"
+                        alt="img" draggable="false" />
+                    <img src="https://media.istockphoto.com/id/465069300/photo/meat-with-sauce-and-vegetables.jpg?s=1024x1024&w=is&k=20&c=ihaq01--MgfR4nxtGgG1ia4iduTAwSlJf0rHqSsUt9Q="
+                        alt="img" draggable="false" />
+                    <img src="https://media.istockphoto.com/id/1284598634/photo/milanesa-a-la-napolitana-argentina-breaded-beef-cutlet.jpg?s=1024x1024&w=is&k=20&c=a-qGQBar5sTINM9wEXrhCmc9976l_qMWR8zzn9yeuLI="
+                        alt="img" draggable="false" />
+                    <img src="https://media.istockphoto.com/id/1395741694/photo/delicious-fried-breaded-cutlets-with-garnish-served-on-white-marble-table-closeup.jpg?s=1024x1024&w=is&k=20&c=qwqTPnaZauuwJ0ZwS-9FasJWujTUbGxIXoCKHzfotp0="
+                        alt="img" draggable="false" />
+                    <img src="https://media.istockphoto.com/id/1439776229/photo/homemade-spinach-and-ricotta-ravioli-with-tomato-sauce-and-parmesan-close-up.jpg?s=1024x1024&w=is&k=20&c=bcjdlEzpdoj9Y_x_Hw10LziCFiVKUMaadSiErOCH4OM="
+                        alt="img" draggable="false" />
+                    <img src="https://media.istockphoto.com/id/1066643992/photo/italian-pasta.jpg?s=1024x1024&w=is&k=20&c=5VgFMzTBCXwCK9TNFkTXxZOq2vqXuDaUOPzd5kBM5EI="
+                        alt="img" draggable="false" />
+                    <img src="https://media.istockphoto.com/id/1230001174/photo/fried-cod-fillet-with-fresh-vegetables.jpg?s=1024x1024&w=is&k=20&c=7dTkiHAtldWM3_yrV__hq62zx-O-ZYUIFFPae91H8Jo="
+                        alt="img" draggable="false" />
+                    <img src="https://media.istockphoto.com/id/2188474401/photo/juicy-and-delicious-hamburger.jpg?s=1024x1024&w=is&k=20&c=BAFk38wttCDrbkLJ6fhU8wY6RhqXNgxOJmgJVohqN8o="
+                        alt="img" draggable="false" />
+                </div>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+            <button type="button" class="btn btn-outline-primary">Relizar Pedido</button>
+        </section>
+    </article>
 
 
 
-        <!--<script>
-            // funcion para abrir y cerrar el menu  hamburguesa
-            function w3_open() {
-                document.getElementById("mySidebar").style.display = "block";
-            }
 
-            function w3_close() {
-                document.getElementById("mySidebar").style.display = "none";
-            }
-        </script>-->
-        
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
-        <!--<script src="style/datos-tarjetas.js"></script>-->
-        <script src="style/navbar-footer.js"></script>
-        <script src="/style/cartService.js"></script>
-        <script src="/style/menuhambuerguesa.js"></script>
+    <footer class="footer">
 
-    </body>
+        <ul class="items-footer">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Platos</a></li>
+            <li><a href="#">Bebidas con alcohol</a></li>
+            <li><a href="#">Bebidas sin alcohol</a></li>
+            <li><a href="#">Postres</a></li>
+            <li><a href="#">Quiénes Somos</a></li>
+            <li><a href="#">Contacto</a></li>
+
+        </ul>
+        <div class="social-media">
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram" style="color: #C13584;"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" aria-label="X">
+                <i class="fa-brands fa-x-twitter" style="color: #1DA1F2;"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                <i class="fa-brands fa-facebook" style="color: #1877F2;"></i>
+            </a>
+            <a href="https://wa.me/tu-numero" target="_blank" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp" style="color: #25D366;"></i>
+            </a>
+        </div>
+        <p>Copyright &#9400; 2024: Chambuchito</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="style/script-carrousel.js"> </script>
+    <script src="style/botonmenu.js"></script>
+    <script src="style/menuhambuerguesa.js"></script>
+
+</body>
 
 </html>

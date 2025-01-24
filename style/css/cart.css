@@ -1,0 +1,220 @@
+main{
+  background-color: #156912;
+  background-image: url(/img/preview.png);
+  background-position: center;
+  height: 40rem;
+}
+
+#totales {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 40px; /* Espacio superior para separar de las tarjetas */
+  margin-bottom: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#cart-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: 2rem;
+}
+.contenedor-tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.tarjeta-producto {
+  width: 250px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #00351d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.2s;
+}
+span{
+  color: #D4AF37;
+}
+.tarjeta-producto:hover {
+  transform: translateY(-5px);
+}
+
+/* Otras reglas de responsividad se mantienen */
+
+
+@media (max-width: 768px) {
+  .contenedor-tarjetas {
+    width: 90%;
+  }
+
+  .tarjeta-producto {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .tarjeta-producto h3 {
+    font-size: 1rem;
+  }
+
+  .tarjeta-producto span {
+    font-size: 1.1rem;
+  }
+
+  .tarjeta-producto button {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contenedor-tarjetas {
+    width: 100%;
+    margin: 0;
+  }
+
+  .tarjeta-producto {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .tarjeta-producto h3 {
+    font-size: 0.9rem;
+  }
+
+  .tarjeta-producto span {
+    font-size: 1rem;
+  }
+
+  .tarjeta-producto button {
+    padding: 6px;
+    font-size: 0.8rem;
+  }
+}
+
+
+
+
+/*******************************************/
+      /* Estilo general para el formulario */
+      #datos-cliente,
+      #resumen-compra {
+        margin-top: 30px; /* Espacio adicional para evitar que quede debajo del footer */
+        padding: 20px;
+        background-color: #f9f9f9; /* Fondo para resaltar el formulario */
+        border-radius: 10px;
+        max-width: 100%; /* Inicialmente ocupa el 100% de la pantalla */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un mejor efecto */
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      /* Estilos específicos para los inputs del formulario */
+      #form-datos-cliente .form-control {
+        padding: 10px;
+        font-size: 16px;
+      }
+
+      #form-datos-cliente .btn-success {
+        width: 100%;
+        padding: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 15px;
+      }
+
+      /* Asegurar que el contenido no se superponga con el footer */
+      footer {
+        margin-top: 50px;
+      }
+
+      /* Asegurar que el contenedor principal tenga espacio suficiente */
+      main {
+        min-height: 100vh;
+        padding-bottom: 50px; /* Espacio adicional para evitar el solapamiento */
+      }
+
+      /* Estilos para el resumen de la compra */
+      #resumen-compra {
+        margin-top: 30px;
+        padding: 20px;
+        background-color: #e9ecef;
+        border-radius: 10px;
+      }
+
+      #resumen-compra ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      #resumen-compra li {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      /* Consultas de medios (media queries) para pantallas más grandes */
+      @media (min-width: 576px) {
+        #datos-cliente,
+        #resumen-compra {
+          max-width: 540px; /* Limitar el ancho en pantallas pequeñas */
+        }
+      }
+
+      @media (min-width: 768px) {
+        #datos-cliente,
+        #resumen-compra {
+          max-width: 720px; /* Limitar el ancho en pantallas medianas */
+        }
+      }
+
+      @media (min-width: 992px) {
+        #datos-cliente,
+        #resumen-compra {
+          max-width: 960px; /* Limitar el ancho en pantallas más grandes */
+        }
+      }
+
+      @media (min-width: 1200px) {
+        #datos-cliente,
+        #resumen-compra {
+          max-width: 1140px; /* Limitar el ancho en pantallas extra grandes */
+        }
+      }
+
+      /* Mejorar el formulario en pantallas pequeñas */
+      @media (max-width: 576px) {
+        #form-datos-cliente .form-control {
+          font-size: 14px;
+          padding: 8px;
+        }
+
+        #form-datos-cliente .btn-success {
+          font-size: 16px;
+          padding: 8px;
+        }
+      }
+
+      /* Mejorar el resumen de compra en pantallas pequeñas */
+      @media (max-width: 576px) {
+        #resumen-compra li {
+          font-size: 14px;
+          margin-bottom: 8px;
+        }
+      }
+/*******************************************/
